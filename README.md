@@ -30,4 +30,4 @@ Screenshot
 
 Query : SELECT sym1, COALESCE(name, sym1) As name, ST_AsGeoJSON(geom)::json As geometry FROM public.human_built WHERE geom && ST_MakeEnvelope(\'"+xmin+"\', \'"+ymin+"\', \'"+xmax+"\', \'"+ymax+"\', 4326).
 
-From above figure (point number 4), it can reveal that all the spatial object overlapping with the given rectangle coordinate will be included.
+From above figure (point number 4), it can be revealed that all the spatial object overlapping with the given rectangle coordinate will be included.
